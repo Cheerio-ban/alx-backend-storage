@@ -7,6 +7,6 @@ AFTER UPDATE
 ON users FOR EACH ROW
 BEGIN
     IF New.email <> Old.email THEN
-    SET New.valid_email = NULL WHERE id = New.id;
+    SET New.valid_email = 0 WHERE id = New.id;
     END IF;
 END$$
