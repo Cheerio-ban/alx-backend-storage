@@ -7,7 +7,7 @@ Logs stats
 from pymongo import MongoClient
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     """Handles output"""
     client = MongoClient('mongodb://127.0.0.1:27017')
     logs = client.logs.nginx
