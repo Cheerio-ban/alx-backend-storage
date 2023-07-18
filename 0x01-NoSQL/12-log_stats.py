@@ -19,7 +19,7 @@ if __name__ == '__main__':
     get_status = logs.count_documents({'method': 'GET',
                                       'path': '/status'})
     print("{} logs".format(docs_num))
-    print("Methods: ")
+    print("Methods:")
     print("\tmethod GET: {}".format(get_num))
     print("\tmethod POST: {}".format(post_num))
     print("\tmethod PUT: {}".format(put_num))
