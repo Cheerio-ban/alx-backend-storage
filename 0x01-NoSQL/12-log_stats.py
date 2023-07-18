@@ -11,6 +11,7 @@ if __name__ == '__main__':
     """Handles output"""
     client = MongoClient('mongodb://127.0.0.1:27017')
     logs = client.logs.nginx
+    # Gets the number of documents in a collection
     docs_num = logs.count_documents({})
     get_num = logs.count_documents({'method': 'GET'})
     post_num = logs.count_documents({'method': 'POST'})
