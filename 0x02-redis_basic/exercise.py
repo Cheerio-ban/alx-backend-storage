@@ -37,7 +37,11 @@ class Cache:
     def get_int(self, key: bytes) -> int:
         """ Parametrize to integer """
         try: 
-            value = int(str(key.decode('utf-8')))
+            data = str(key.decode('utf-8'))
+            if not data.isdigit():
+                raise ValueError('Not compatible')
+            else:
+                value = int(data)
         except Exception:
             value = 0
         return value
