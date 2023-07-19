@@ -36,4 +36,4 @@ class Cache:
     
     def get_int(self, key: bytes) -> int:
         """ Parametrize to integer """
-        return int(key.decode('utf-8'))
+        return int(str(key.decode('utf-8')))
