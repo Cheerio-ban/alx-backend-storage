@@ -38,6 +38,6 @@ class Cache:
         """ Parametrize to integer """
         try: 
             value = int(str(key.decode('utf-8')))
-        except ValueError:
-            raise ValueError("Failed to convert to an integer")
+        except Exception:
+            value = 0
         return value
