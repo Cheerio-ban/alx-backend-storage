@@ -19,11 +19,11 @@ def get_logs():
                                              'path': '/status'})
     print("{} logs".format(docs_num))
     print("Methods:")
-    print("\tmethod GET: {}".format(get_num))
-    print("\tmethod POST: {}".format(post_num))
-    print("\tmethod PUT: {}".format(put_num))
-    print("\tmethod PATCH: {}".format(patch_num))
-    print("\tmethod DELETE: {}".format(delete_num))
+    print("    method GET: {}".format(get_num))
+    print("    method POST: {}".format(post_num))
+    print("    method PUT: {}".format(put_num))
+    print("    method PATCH: {}".format(patch_num))
+    print("    method DELETE: {}".format(delete_num))
     print("{} status check".format(get_status))
 
 
