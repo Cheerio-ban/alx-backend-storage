@@ -32,7 +32,7 @@ class Cache:
     
     def get_str(self, key: bytes) -> str:
         """ Parametrize to string """
-        return (key).decode('utf-8')
+        return str((key).decode('utf-8'))
     
     def get_int(self, key: bytes) -> int:
         """ Parametrize to integer """
