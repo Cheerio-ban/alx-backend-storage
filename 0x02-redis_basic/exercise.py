@@ -36,4 +36,8 @@ class Cache:
     
     def get_int(self, key: bytes) -> int:
         """ Parametrize to integer """
-        return int(str(key.decode('utf-8')))
+        try: 
+            value = int(str(key.decode('utf-8')))
+        except ValueError:
+            raise ValueError("Failed to convert to an integer")
+        return value
